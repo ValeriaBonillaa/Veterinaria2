@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Veterinaria.AdministrarMascota"
+             Title="AdministrarMascota">
+    
+    <ContentPage Title="Agregar Mascota">
+        <VerticalStackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Button x:Name="bntAgregarMascota" 
+                    Text="Agregar Mascota" 
+                    Margin="20"
+                    WidthRequest="200"
+                    BackgroundColor="LightGreen"
+                    TextColor="Black"
+                    BorderColor="Black"
+                    FontSize="Small"
+                    Clicked="AdministarMascota_Btn"
+                    HorizontalOptions="End"></Button>
+            </StackLayout>
+        </VerticalStackLayout>
+    </ContentPage>
+
+    <ContentPage Title="Actualizar Mascota">
+        <VerticalStackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Button x:Name="bntActualizar" 
+                    Text="Actualizar Mascota" 
+                    Margin="20"
+                    WidthRequest="200"
+                    BackgroundColor="LightGreen"
+                    TextColor="Black"
+                    BorderColor="Black"
+                    FontSize="Small"
+                    Clicked="Actualizar_Btn" ></Button>
+            </StackLayout>
+        </VerticalStackLayout>
+    </ContentPage>
+
+    <ContentPage Title="Eliminar Mascota">
+        <VerticalStackLayout>
+            <StackLayout Orientation="Horizontal">
+                <Button x:Name="bntEliminar" 
+                    Text="Elimar Mascota" 
+                    Margin="20"
+                    WidthRequest="150"
+                    BackgroundColor="LightGreen"
+                    TextColor="Black"
+                    BorderColor="Black"
+                    FontSize="Small"
+                    Clicked="Eliminar_Btn"
+                    HorizontalOptions="Start"></Button>
+            </StackLayout>
+        </VerticalStackLayout>
+    </ContentPage>
+
+
+</TabbedPage>

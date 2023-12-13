@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Veterinaria.PantallaPrincipal"
+             Title="PantallaPrincipal">
+
+    <ContentPage Title="Mascotas">
+        <StackLayout Margin="50" HorizontalOptions="Fill">
+            <StackLayout Padding="10">
+                <StackLayout Orientation="Horizontal">
+
+                <Button x:Name="bntAdminitrarMascota" 
+                    Text="Administar Mascota" 
+                    Margin="20"
+                    WidthRequest="210"
+                    BackgroundColor="LightGreen"
+                    TextColor="Black"
+                    BorderColor="Black"
+                    FontSize="Small"
+                    Clicked="AdministarMascota_Btn"
+                    HorizontalOptions="End"></Button>
+
+            <Button x:Name="bntAdminitrarCita" 
+                    Text="Administar Cita" 
+                    Margin="20"
+                    WidthRequest="210"
+                    BackgroundColor="LightGreen"
+                    TextColor="Black"
+                    BorderColor="Black"
+                    FontSize="Small"
+                    Clicked="AdministarCita_Btn"
+                    HorizontalOptions="End"></Button>
+
+            <Button x:Name="bntAdminitrarPersona" 
+                    Text="Administar Persona" 
+                    Margin="20"
+                    WidthRequest="210"
+                    BackgroundColor="LightGreen"
+                    TextColor="Black"
+                    BorderColor="Black"
+                    FontSize="Small"
+                    Clicked="AdministarPersona_Btn"
+                    HorizontalOptions="End"></Button>
+                </StackLayout>
+            </StackLayout>
+        </StackLayout>
+    </ContentPage>
+</TabbedPage>

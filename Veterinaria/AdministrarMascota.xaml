@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<TabbedPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Veterinaria.AdministrarMascota"
+             Title="AdministrarMascota">
+    <ContentPage Title="Mascota">
+
+        <VerticalStackLayout>
+            <ScrollView x:Name="scrollView" Grid.Row="1" Margin="20" HeightRequest="450">
+
+                <ListView x:Name="listaMascotas" BackgroundColor="Transparent" SeparatorColor="#91A8B4" >
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ImageCell ImageSource="{Binding Imagen}" 
+                                   Text="{Binding descripcion}" 
+                                   Detail="{Binding Nom_Mascota}"></ImageCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </ScrollView>
+            <Button x:Name="bntAgregar" 
+                    Text="Agregar Mascota" 
+                    Margin="20"
+                    WidthRequest="200"
+                    BackgroundColor="LightGreen"
+                    TextColor="Black"
+                    BorderColor="Black"
+                    FontSize="Small"
+                    Clicked="Agregar_Btn"
+                    HorizontalOptions="Center"></Button>
+        </VerticalStackLayout>
+    </ContentPage>
+</TabbedPage>

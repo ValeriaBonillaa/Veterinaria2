@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Veterinaria.AgregarPersona"
+             Title="AgregarPersona">
+    <VerticalStackLayout>
+        <StackLayout Margin="50" HorizontalOptions="Fill">
+            <Entry x:Name= "txtRol"
+                    Placeholder= "Id del Rol"
+                   Keyboard="Numeric"
+                    TextColor= "#000"
+                    PlaceholderColor= "#154360"></Entry>
+
+        <Entry x:Name= "txtNombre"
+                    Placeholder= "Nombre Completo"
+                    TextColor= "#000"
+                    PlaceholderColor= "#154360"></Entry>
+
+        <Entry x:Name= "txtNumero"
+                    Placeholder= "Numero"
+                    TextColor= "#000"
+                    PlaceholderColor= "#154360"></Entry>
+
+            <Button x:Name="bntAgregarPersona" 
+                    Text="Agregar Persona" 
+                    Margin="20"
+                    WidthRequest="200"
+                    BackgroundColor="LightGreen"
+                    TextColor="Black"
+                    BorderColor="Black"
+                    FontSize="Small"
+                    Clicked="AgregarPersona_Btn"
+                    HorizontalOptions="End"></Button>
+        </StackLayout>
+    </VerticalStackLayout>
+</ContentPage>

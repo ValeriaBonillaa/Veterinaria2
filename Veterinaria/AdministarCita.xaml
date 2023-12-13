@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Veterinaria.AdministarCita"
+             Title="AdministarCita">
+    <VerticalStackLayout>
+        <ScrollView x:Name="scrollView2" Grid.Row="1" Margin="20" HeightRequest="450">
+
+            <ListView x:Name="listaCitas" BackgroundColor="Transparent" SeparatorColor="#91A8B4" >
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ImageCell ImageSource="{Binding Imagen}" 
+                                   Text="{Binding Id_Persona}" 
+                                   Detail="{Binding Fecha_Cita}"></ImageCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </ScrollView>
+        <Button x:Name="bntAgregar" 
+                    Text="Agregar Cita" 
+                    Margin="20"
+                    WidthRequest="200"
+                    BackgroundColor="LightGreen"
+                    TextColor="Black"
+                    BorderColor="Black"
+                    FontSize="Small"
+                    Clicked="Agregar_Btn"
+                    HorizontalOptions="Center"></Button>
+    </VerticalStackLayout>
+</ContentPage>

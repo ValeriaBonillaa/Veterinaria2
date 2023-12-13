@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Veterinaria.MainPage">
+
+    <ScrollView>
+        <StackLayout Margin="50" HorizontalOptions="Fill">
+            <StackLayout Padding="10">
+
+                <Image Source="Inicio.jpg" WidthRequest="125" HeightRequest="125"/>
+
+                <Entry x:Name= "txtCorreo"
+                    Placeholder= "Correo"
+                    TextColor= "#000"
+                    PlaceholderColor= "#154360"></Entry>
+
+                <Entry x:Name= "txtPass"
+                    Placeholder= "Contraseña"
+                    TextColor= "#000"
+                    IsPassword="True"
+                    PlaceholderColor= "#154360"></Entry>
+
+                <Button x:Name="bntLogin" 
+                    Text="Ingresar" 
+                    Margin="20"
+                    WidthRequest="500"
+                    BackgroundColor="AntiqueWhite"
+                    TextColor="Black"
+                    BorderColor="Black"
+                    FontSize="Small"
+                    Clicked="Login_Btn"
+                    VerticalOptions="Center"></Button>
+
+                <Button x:Name="bntRegistrarse" 
+                    Text="Registrarse" 
+                    Margin="20"
+                    WidthRequest="400"
+                    BackgroundColor="AntiqueWhite"
+                    TextColor="Black"
+                    BorderColor="Black"
+                    FontSize="Small"
+                    Clicked="Registrarse_Btn"
+                    VerticalOptions="Center"></Button>
+
+            </StackLayout>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
